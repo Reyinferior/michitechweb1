@@ -1,5 +1,6 @@
-<html lang="es">
-<head>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MichiTech – Transformamos tu negocio con tecnología inteligente</title>
@@ -14,152 +15,284 @@
     <meta property="og:url" content="https://tudominio.com" />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- SEO adicional -->
+    <meta name="author" content="MichiTech" />
+    <meta name="keywords" content="automatización, inteligencia artificial, desarrollo de software, chatbots, optimización de procesos" />
+
     <!-- Preconnect para rendimiento -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Si usas una webfont, cárgala aquí; si no, nos quedamos con system-ui para rendimiento -->
 
     <!-- CSS externo -->
     <link rel="stylesheet" href="/assets/style.css" />
-</head>
-<body>
+    </head>
+    <body>
     <!-- NAV -->
     <nav id="navbar" class="nav">
         <div class="container nav__container" role="navigation" aria-label="Principal">
         <a href="#inicio" class="logo" aria-label="Ir al inicio">
-            <img src="/img/mishi-mini.svg" width="40" height="40" alt="Logo de MichiTech" loading="eager" decoding="async" />
+            <img src="/img/mishi-mini.svg" width="40" height="40" alt="Logo de MichiTech" />
             <span class="logo__text">MichiTech</span>
         </a>
         <button class="nav__toggle" aria-controls="navmenu" aria-expanded="false" aria-label="Abrir menú">☰</button>
         <ul id="navmenu" class="nav__links">
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#regalo-secreto">Regalo</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#contacto" class="btn btn--nav" aria-label="Agendar consulta gratuita">Consulta Gratis</a>
+        <div class="nav__actions">
+            <button id="themeToggle" class="nav__toggle-theme" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+            <a href="#contacto" class="btn btn--nav btn--cta" aria-label="Agendar consulta gratuita"><span class="btn__icon" aria-hidden="true">💬</span><span class="btn__label">Hablemos</span></a>
+        </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <header id="inicio" class="hero" aria-labelledby="hero-title">
+    <main>
+        <!-- HERO -->
+        <header id="inicio" class="hero" aria-labelledby="hero-title">
         <div class="hero__bg" aria-hidden="true"></div>
         <div class="container hero__content">
-        <div class="hero__text">
+            <div class="hero__text">
             <h1 id="hero-title">Transformamos tu negocio con <span class="text-gradient">tecnología inteligente</span></h1>
-            <p>Combinamos innovación y automatización con IA para que la tecnología sea eficiente y (un poco) divertida. Hecho a la medida para emprendedores, pymes e influencers.</p>
+            <p>Agencia de automatización con Inteligencia Artificial. Implementamos flujos con n8n/Make, chatbots y software a medida para escalar tus operaciones.</p>
             <div class="hero__actions">
-            <a href="#contacto" class="btn btn--primary" aria-label="Comenzar ahora con una consulta">🚀 Comenzar ahora</a>
-            <a href="#servicios" class="btn btn--ghost" aria-label="Ver los servicios de MichiTech">📋 Ver servicios</a>
+                <a href="#contacto" class="btn btn--primary" aria-label="Reservar consultoría gratuita">Reserva tu consultoría gratuita</a>
+                <a href="#regalo-secreto" class="btn btn--ghost" aria-label="Ir a tu regalo secreto">🎁 Regalo secreto</a>
+            </div>
+            </div>
+            <figure class="hero__visual">
+            <img src="/img/mishi-hero.png"
+                
+                sizes="(max-width: 880px) 80vw, 480px"
+                width="480" height="480"
+                alt="Mishi, la mascota de MichiTech, en pose heroica tecnológica"
+                class="hero__img" loading="lazy" decoding="async" />
+            <figcaption class="sr-only">Mishi representando la innovación y la automatización con IA.</figcaption>
+            </figure>
+        </div>
+        </header>
+
+        <!-- QUIÉNES SOMOS -->
+        <section id="quienes-somos" class="section" aria-labelledby="qs-title">
+        <div class="container">
+            <div class="section__title">
+            <h2 id="qs-title">Quiénes somos</h2>
+            <p>Conectamos negocio y tecnología con una metodología práctica y enfocada en resultados.</p>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start;">
+            <article class="card">
+                <h3>Misión</h3>
+                <p>Ayudar a emprendedores y pymes a automatizar procesos clave con IA para ahorrar tiempo y crecer de manera sostenible.</p>
+            </article>
+            <article class="card">
+                <h3>Cómo trabajamos</h3>
+                <p>1) Descubrimiento → 2) Prototipo rápido → 3) Integración con tus herramientas → 4) Medición de impacto. Siempre con acompañamiento.</p>
+            </article>
+            <article class="card">
+                <h3>Por qué elegirnos</h3>
+                <p>Implementaciones ágiles, documentación clara y soluciones a medida (no plantillas genéricas). Soporte y mejora continua.</p>
+            </article>
+            </div>
+            <!-- FAQ -->
+            <div class="faq" style="margin-top:2rem">
+            <h3>Preguntas frecuentes</h3>
+            <details>
+                <summary>¿Cuánto tiempo tarda una implementación?</summary>
+                <p>Depende del proyecto, pero la mayoría de integraciones se completan en 1 a 3 semanas.</p>
+            </details>
+            <details>
+                <summary>¿Ofrecen soporte después de la entrega?</summary>
+                <p>Sí, contamos con planes de soporte y mantenimiento adaptados a cada cliente.</p>
+            </details>
+            <details>
+                <summary>¿Puedo empezar con algo pequeño e ir ampliando?</summary>
+                <p>Claro, de hecho recomendamos implementar por fases para maximizar el retorno.</p>
+            </details>
             </div>
         </div>
-        <figure class="hero__visual">
-            <img src="/img/mishi-hero.png" width="480" height="480" alt="Mishi, la mascota de MichiTech, en pose heroica tecnológica" class="hero__img" loading="lazy" decoding="async" />
-            <figcaption class="sr-only">Mishi representando la innovación y la automatización con IA.</figcaption>
-        </figure>
-        </div>
-    </header>
+        </section>
 
-    <!-- SERVICES -->
-    <section id="servicios" class="section services" aria-labelledby="services-title">
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section services" aria-labelledby="services-title">
         <div class="container">
-        <div class="section__title">
+            <div class="section__title">
             <h2 id="services-title">Nuestros servicios</h2>
             <p>Soluciones tecnológicas personalizadas para hacer crecer tu negocio.</p>
+            </div>
+            <div class="grid services__grid">
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">🤖</div>
+                <h3>Automatización con IA</h3>
+                <p>Flujos inteligentes (n8n/Make), OCR, LLMs y conectores. Enfócate en vender, no en tareas repetitivas.</p>
+            </article>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">💬</div>
+                <h3>Chatbots Inteligentes</h3>
+                <p>Atención 24/7 conectada a tu CRM/Sheets. Menos colas, más satisfacción.</p>
+            </article>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">📊</div>
+                <h3>Análisis de Datos</h3>
+                <p>De datos crudos a decisiones: dashboards claros y métricas accionables.</p>
+            </article>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">🎯</div>
+                <h3>Consultoría Tecnológica</h3>
+                <p>Estrategia con ROI real. Elegimos lo que aporta y lo implementamos contigo.</p>
+            </article>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">⚡</div>
+                <h3>Optimización de Procesos</h3>
+                <p>Detectamos cuellos de botella y los arreglamos con integraciones y capacitación.</p>
+            </article>
+            </div>
         </div>
-        <div class="grid services__grid">
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">🤖</div>
-            <h3>Automatización con IA</h3>
-            <p>Eliminamos tareas repetitivas con flujos inteligentes (n8n/Make), OCR, LLMs y conectores. Enfócate en vender, no en copiar/pegar.</p>
-            </article>
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">💻</div>
-            <h3>Desarrollo de Software</h3>
-            <p>Apps y sistemas a medida (web y backend) que encajan con tus procesos, no al revés.</p>
-            </article>
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">💬</div>
-            <h3>Chatbots Inteligentes</h3>
-            <p>Atención 24/7 con bots conectados a tu CRM/Sheets. Menos colas, más satisfacción.</p>
-            </article>
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">📊</div>
-            <h3>Análisis de Datos</h3>
-            <p>De datos crudos a decisiones: dashboards claros y métricas accionables.</p>
-            </article>
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">🎯</div>
-            <h3>Consultoría Tecnológica</h3>
-            <p>Estrategia primero: elegimos lo que aporta ROI real y lo implementamos contigo.</p>
-            </article>
-            <article class="card service">
-            <div class="service__icon" aria-hidden="true">⚡</div>
-            <h3>Optimización de Procesos</h3>
-            <p>Detectamos cuellos de botella y los arreglamos con automatización, integraciones y capacitación.</p>
-            </article>
-        </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- MISSION / VISION -->
-    <section id="nosotros" class="section mv" aria-labelledby="mv-title">
+        <!-- PRODUCTOS EDITABLES -->
+        <section id="productos" class="section" aria-labelledby="prod-title">
         <div class="container">
-        <div class="grid mv__grid">
-            <article class="card mv__card">
-            <h3 id="mv-title">🎯 Nuestra misión</h3>
-            <p>Transformar negocios con soluciones personalizadas que combinan innovación y automatización con IA para ser más eficientes y competitivos.</p>
+            <div class="section__title">
+            <h2 id="prod-title">Productos</h2>
+            <p>Listos para usar hoy. Puedes editarlos y ampliarlos según tu caso.</p>
+            </div>
+            <div class="grid services__grid">
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">🧾</div>
+                <h3>Sistema de Facturación + Inventario <span class="badge">Nuevo</span></h3>
+                <p>Controla ventas, stock y reportes. Integrable con Sheets y pasarelas.</p>
+                <a class="btn btn--ghost" href="#contacto">Pedir demo</a>
             </article>
-            <article class="card mv__card">
-            <h3>🚀 Nuestra visión</h3>
-            <p>Liderar en automatización y software a medida para que emprendedores e influencers escalen con procesos sólidos.</p>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">🏦</div>
+                <h3>Cuentas Corrientes (Colegios/Colegiados)</h3>
+                <p>Gestión de pagos, estados y recordatorios automáticos.</p>
+                <a class="btn btn--ghost" href="#contacto">Pedir demo</a>
             </article>
+            <article class="card service">
+                <div class="service__icon" aria-hidden="true">🧩</div>
+                <h3>Plantillas de Automatización</h3>
+                <p>Flujos prearmados n8n (leads, WhatsApp, correo, CRM). Se adaptan a tu negocio.</p>
+                <a class="btn btn--ghost" href="#contacto">Ver catálogo</a>
+            </article>
+            </div>
         </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- STATS (Opcional: edítalas con cifras reales) -->
-    <section class="stats" aria-label="Indicadores de resultados">
+        <!-- REGALO SECRETO -->
+        <section id="regalo-secreto" class="section" aria-labelledby="gift-title">
+        <div class="container">
+            <div class="section__title">
+            <h2 id="gift-title">🎁 Regalo secreto</h2>
+            <p>Un recurso gratis para empezar a automatizar hoy.</p>
+            <div class="countdown" aria-live="polite">
+                <strong>Disponible por:</strong> <span id="giftCountdown" class="countdown__value">--:--:--</span>
+            </div>
+            </div>
+            <ol style="margin-bottom:1.5rem">
+            <li>Haz clic en la imagen del regalo.</li>
+            <li>Descarga el recurso y ábrelo en tu dispositivo.</li>
+            <li>Aplica las instrucciones y empieza a automatizar.</li>
+            </ol>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items:center;">
+            <figure class="card gift-card" style="padding:0;overflow:hidden">
+                <a href="https://tu-enlace-de-regalo.com" target="_blank" rel="noopener" aria-label="Abrir regalo secreto en nueva pestaña">
+                <img src="/img/wew.png" alt="Vista previa del regalo secreto" style="display:block;width:100%;height:auto" loading="lazy" />
+                </a>
+            </figure>
+            <article class="card">
+                <h3>¿Qué incluye?</h3>
+                <ul>
+                <li>Plantilla n8n para recordatorios automáticos.</li>
+                <li>Guía rápida para conectarlo a Google Sheets.</li>
+                <li>Checklist para lanzar tu primer flujo en 30 minutos.</li>
+                </ul>
+                <p style="margin-top:12px">Haz clic en la imagen para descargarlo.<br/>¿Quieres otro regalo? <a href="#contacto">Pídenos uno a medida</a>.</p>
+            </article>
+            </div>
+        </div>
+        </section>
+
+        <!-- STATS (opcionales) -->
+        <section class="stats" aria-label="Indicadores de resultados">
         <div class="container grid stats__grid">
-        <div class="stat"><span class="stat__value">100+</span><span class="stat__label">Proyectos</span></div>
-        <div class="stat"><span class="stat__value">95%</span><span class="stat__label">Satisfacción</span></div>
-        <div class="stat"><span class="stat__value">50+</span><span class="stat__label">Empresas</span></div>
-        <div class="stat"><span class="stat__value">3×</span><span class="stat__label">Crecimiento</span></div>
+            <div class="stat"><span class="stat__value">100+</span><span class="stat__label">Proyectos</span></div>
+            <div class="stat"><span class="stat__value">95%</span><span class="stat__label">Satisfacción</span></div>
+            <div class="stat"><span class="stat__value">50+</span><span class="stat__label">Empresas</span></div>
+            <div class="stat"><span class="stat__value">3×</span><span class="stat__label">Crecimiento</span></div>
         </div>
-    </section>
+        </section>
 
-    <!-- CTA + FORM -->
-    <section id="contacto" class="section cta" aria-labelledby="cta-title">
+        <!-- CTA + FORM con microcopys de confianza -->
+        <section id="contacto" class="section cta" aria-labelledby="cta-title">
         <div class="container cta__container">
-        <div class="section__title">
+            <div class="section__title">
             <h2 id="cta-title">¿Listo para <span class="text-gradient">transformar</span> tu negocio?</h2>
-            <p>La tecnología no tiene que ser aburrida. Creamos soluciones eficientes y útiles para tu día a día.</p>
-        </div>
-        <form id="leadForm" class="form" action="https://TU_DOMINIO_N8N/webhook/michitech" method="POST" novalidate>
-            <div class="form__row">
-            <label class="sr-only" for="nombre">Nombre completo</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Nombre completo" required autocomplete="name" />
-            <label class="sr-only" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Email" required autocomplete="email" />
+            <p>Cuéntanos tu caso y te proponemos el mejor camino: producto, servicio o ambos.</p>
+            <ul class="trust-microcopy">
+                <li>✅ Garantía de satisfacción: revisiones hasta que estés conforme.</li>
+                <li>⚡ Tiempo de entrega optimizado: desde 7 días hábiles.</li>
+                <li>📞 Soporte directo: habla con un especialista, no con un bot.</li>
+            </ul>
             </div>
-            <div class="form__row">
-            <label class="sr-only" for="telefono">Teléfono</label>
-            <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required autocomplete="tel" />
-            <label class="sr-only" for="tipo">Tipo de negocio</label>
-            <select id="tipo" name="tipo" required>
-                <option value="">Tipo de negocio</option>
-                <option value="emprendedor">Emprendedor</option>
-                <option value="influencer">Influencer</option>
-                <option value="pyme">Pequeña/Mediana Empresa</option>
-                <option value="corporativo">Empresa Corporativa</option>
-                <option value="otro">Otro</option>
-            </select>
-            </div>
-            <label class="sr-only" for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte" required rows="5"></textarea>
-            <button type="submit" class="btn btn--primary btn--full">🐱 Solicitar consulta gratuita</button>
+            <form id="leadForm" class="form multistep" action="https://TU_DOMINIO_N8N/webhook/michitech" method="POST" novalidate>
+            <ol class="steps" aria-label="Progreso" role="list">
+                <li class="steps__item is-active">Datos</li>
+                <li class="steps__item">Negocio</li>
+                <li class="steps__item">Proyecto</li>
+            </ol>
+
+            <fieldset class="step is-current" data-step="1" aria-label="Datos">
+                <div class="form__row">
+                <label class="sr-only" for="nombre">Nombre completo</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Nombre completo" required autocomplete="name" />
+                <label class="sr-only" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required autocomplete="email" />
+                </div>
+                <div class="step__actions">
+                <button type="button" class="btn btn--primary js-next">Siguiente</button>
+                </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="2" aria-label="Negocio" hidden>
+                <div class="form__row">
+                <label class="sr-only" for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required autocomplete="tel" />
+                <label class="sr-only" for="tipo">Tipo de negocio</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Tipo de negocio</option>
+                    <option value="emprendedor">Emprendedor</option>
+                    <option value="influencer">Influencer</option>
+                    <option value="pyme">Pequeña/Mediana Empresa</option>
+                    <option value="corporativo">Empresa Corporativa</option>
+                    <option value="otro">Otro</option>
+                </select>
+                </div>
+                <div class="step__actions">
+                <button type="button" class="btn btn--ghost js-prev">Atrás</button>
+                <button type="button" class="btn btn--primary js-next">Siguiente</button>
+                </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="3" aria-label="Proyecto" hidden>
+                <label class="sr-only" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte" required rows="5"></textarea>
+                <div class="step__actions">
+                <button type="button" class="btn btn--ghost js-prev">Atrás</button>
+                <button type="submit" class="btn btn--primary btn--full">🐱 Enviar solicitud</button>
+                </div>
+            </fieldset>
+
             <p id="formMsg" class="form__msg" role="status" aria-live="polite"></p>
-        </form>
+            </form>
         </div>
-    </section>
+        </section>
+        <!-- Sticky CTA (móvil) -->
+        <div class="sticky-cta" aria-hidden="true">
+        <a href="#contacto" class="btn btn--primary btn--full">Solicitar consulta gratuita</a>
+        </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -172,7 +305,33 @@
         </div>
     </footer>
 
+    <!-- Chat flotante: WhatsApp -->
+    <a href="https://wa.me/51999999999?text=Hola%20MichiTech!%20Quiero%20una%20consulta%20gratuita." class="wa-float" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">💬</a>
+
+    <!-- Alternativas (descomenta uno): -->
+    <!-- Crisp
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="TU_ID_CRISP";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    -->
+    <!-- Tawk.to
+    <script type="text/javascript">var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/TU_ID/1abcdef';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();</script>
+    -->
+
     <!-- JS externo -->
     <script src="/assets/app.js" defer></script>
+    <!-- Botón Volver arriba -->
+    <button id="toTop" class="to-top" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+    <!-- Modal oferta (exit-intent) -->
+    <div id="exitOffer" class="modal" aria-hidden="true" role="dialog" aria-labelledby="offerTitle" aria-modal="true" hidden>
+        <div class="modal__overlay" data-close></div>
+        <div class="modal__card" role="document">
+        <button class="modal__close" aria-label="Cerrar" data-close>×</button>
+        <h3 id="offerTitle">🎉 Oferta limitada</h3>
+        <p>Si reservas hoy tu consultoría gratuita, añadimos <strong>1 plantilla n8n premium</strong> sin costo.</p>
+        <a href="#contacto" class="btn btn--primary modal__cta">Aprovechar ahora</a>
+        <small class="modal__note">Válido mientras el contador del regalo esté activo.</small>
+        </div>
+    </div>
+
     </body>
     </html>
