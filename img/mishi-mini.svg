@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>Mishi base - vector SVG (transparent)</title>
+  <defs>
+    <style>
+      :root {
+        --stroke:#0d1117;
+        --fur:#2a2f36;
+        --fur-shadow:#242930;
+        --ear:#ff8a65;
+        --eye:#f2b21b;
+        --gold:#f5b402;
+        --gold-dark:#c58d00;
+        --cape:#4a3326;
+        --cape-dark:#3b281d;
+        --pattern:#6b4a33;
+        --card:#2a7ff6;
+      }
+      .ol { stroke: var(--stroke); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <!-- Greek key pattern tile for the cape -->
+    <pattern id="greekKey" patternUnits="userSpaceOnUse" width="36" height="24">
+      <rect x="0" y="0" width="36" height="24" fill="var(--cape)"/>
+      <path d="M4 20h12V8H8v8h8" fill="none" stroke="var(--pattern)" stroke-width="4" stroke-linejoin="miter"/>
+      <path d="M20 4v12h12V8h-8v8" fill="none" stroke="var(--pattern)" stroke-width="4" stroke-linejoin="miter"/>
+    </pattern>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="256" cy="468" rx="118" ry="26" fill="#000" opacity=".15"/>
+
+  <!-- Tail -->
+  <path class="ol" fill="var(--fur)" d="M394 382c22 2 40 20 40 42 0 26-21 46-46 46-23 0-42-18-45-40-2-12 5-25 17-27 13-3 23 8 36 8 6 0 10-1 14-3 3-2 5-4 8-6 3-2 8-19-24-20z"/>
+
+  <!-- Body -->
+  <path class="ol" fill="var(--fur)" d="M156 210c-18 26-28 60-28 96 0 92 57 164 128 164s128-72 128-164c0-36-10-70-28-96H156z"/>
+  <!-- Belly light -->
+  <path fill="var(--fur-shadow)" d="M182 328c0 64 42 116 94 116s94-52 94-116H182z" opacity=".25"/>
+
+  <!-- Legs -->
+  <g>
+    <path class="ol" fill="var(--fur)" d="M184 446c-18 0-32 14-32 32v10h84v-10c0-18-14-32-32-32h-20z"/>
+    <path class="ol" fill="var(--fur)" d="M344 446h-20c-18 0-32 14-32 32v10h84v-10c0-18-14-32-32-32z"/>
+  </g>
+
+  <!-- Arms -->
+  <path class="ol" fill="var(--fur)" d="M132 322c-14 6-24 20-24 36 0 22 18 40 40 40 20 0 36-14 39-33l6-33-61-10z"/>
+  <path class="ol" fill="var(--fur)" d="M380 322 319 332l6 33c3 19 19 33 39 33 22 0 40-18 40-40 0-16-10-30-24-36z"/>
+
+  <!-- Cape -->
+  <path class="ol" d="M112 292c0-64 56-104 144-104s144 40 144 104v18c0 10-8 18-18 18H130c-10 0-18-8-18-18v-18z" fill="url(#greekKey)"/>
+  <!-- Cape edge -->
+  <path d="M112 310h288" stroke="var(--cape-dark)" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+
+  <!-- Medallion -->
+  <g>
+    <circle cx="256" cy="308" r="32" fill="var(--gold)" class="ol"/>
+    <circle cx="256" cy="308" r="16" fill="var(--gold-dark)"/>
+  </g>
+
+  <!-- Head -->
+  <path class="ol" fill="var(--fur)" d="M256 72c-64 0-118 50-124 114-4 40 6 73 14 85 2 3 6 5 9 3 32-18 64-26 101-26s69 8 101 26c3 2 7 0 9-3 8-12 18-45 14-85-6-64-60-114-124-114z"/>
+
+  <!-- Ears -->
+  <path class="ol" fill="var(--fur)" d="M144 158c-22-10-44 0-56 22 2-42 28-80 64-96l12 74z"/>
+  <path class="ol" fill="var(--fur)" d="M368 158c22-10 44 0 56 22-2-42-28-80-64-96l-12 74z"/>
+  <path d="M162 151c-21 8-33 28-40 48 22-6 42-22 55-41l-15-7z" fill="var(--ear)"/>
+  <path d="M350 151c21 8 33 28 40 48-22-6-42-22-55-41l15-7z" fill="var(--ear)"/>
+
+  <!-- Eyes -->
+  <g>
+    <ellipse class="ol" cx="204" cy="240" rx="38" ry="30" fill="var(--eye)"/>
+    <ellipse class="ol" cx="308" cy="240" rx="38" ry="30" fill="var(--eye)"/>
+    <circle cx="220" cy="246" r="6" fill="#000" opacity=".35"/>
+    <circle cx="324" cy="246" r="6" fill="#000" opacity=".35"/>
+  </g>
+
+  <!-- Nose & mouth -->
+  <g>
+    <path class="ol" d="M248 268c0 10 8 18 18 18s18-8 18-18" stroke="var(--stroke)"/>
+    <circle cx="256" cy="258" r="8" fill="#ff764a"/>
+  </g>
+
+  <!-- Crown -->
+  <g>
+    <path class="ol" fill="var(--gold)" d="M256 94c-24 0-44 18-46 42l-6 56h104l-6-56c-2-24-22-42-46-42z"/>
+    <path class="ol" fill="var(--gold)" d="M180 176l-6 44h68v-44H180z"/>
+    <path class="ol" fill="var(--gold)" d="M338 176l6 44h-68v-44h62z"/>
+    <circle cx="256" cy="192" r="16" fill="var(--gold-dark)" class="ol"/>
+  </g>
+
+</svg>
